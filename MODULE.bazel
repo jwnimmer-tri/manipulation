@@ -6,9 +6,9 @@ module(name = "manipulation")
 bazel_dep(name = "apple_support", version = "1.17.1")
 
 # Add the Bazel rules we need.
-bazel_dep(name = "bazel_skylib", version = "1.8.0")
+bazel_dep(name = "bazel_skylib", version = "1.8.1")
 bazel_dep(name = "rules_cc", version = "0.2.0") 
-bazel_dep(name = "rules_python", version = "0.40.0")
+bazel_dep(name = "rules_python", version = "1.5.4")
 
 # Note: This repository uses Drake via pip wheels, not as a Bazel dependency.
 # We only use drake_models as a Bazel repository for performance.

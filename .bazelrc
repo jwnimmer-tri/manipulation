@@ -3,6 +3,10 @@
 build --enable_bzlmod
 common --enable_bzlmod
 
+# Opt-in to a conventional site-packages directory layout, as required by Drake.
+common --@rules_python//python/config_settings:bootstrap_impl=script
+common --@rules_python//python/config_settings:venvs_site_packages=yes
+
 # Automatic platform-specific Python version selection following Drake recommendations
 # These configs are automatically applied based on the detected platform
 
